@@ -1,7 +1,6 @@
 class LensScan < Formula
-  desc "Google Lens OCR and translation from the command line"
+  desc "Google Lens OCR and translation from the command-line"
   homepage "https://github.com/bropines/chrome-lens-py"
-  version "3.5.1"
   license "MIT"
 
   # The prebuilt standalone folder rather than a source build: Nuitka has
@@ -10,8 +9,8 @@ class LensScan < Formula
   # have installed. The archives are ad-hoc signed, so Gatekeeper is content.
   on_macos do
     on_arm do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.5.1/lens_scan-macos-arm64.zip"
-      sha256 "3fb3f9becdb24071db21ae079b6dc466ae522cdd111b4743238ad0c6d5a41e7c"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.5.2/lens_scan-macos-arm64.zip"
+      sha256 "66cb73b2aa6e2d6b6c9c2e58e5638453fdda6e447cb9f516df4d37aa554e18ab"
     end
 
     on_intel do
@@ -25,8 +24,8 @@ class LensScan < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.5.1/lens_scan-linux-amd64.zip"
-      sha256 "eea7b039a98a68c03e4d76dd19c62240a33907893d8a846589c7c908ace3109b"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.5.2/lens_scan-linux-amd64.zip"
+      sha256 "ae587997a8b008089de6452e91bd1996992fc38ddab16b4afe79a663461abac1"
     end
 
     on_arm do
