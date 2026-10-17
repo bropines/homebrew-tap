@@ -10,22 +10,22 @@ class LensScan < Formula
   on_macos do
     on_arm do
       url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-macos-arm64.zip"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "f4c46517762a1a86f0765ec7ac549cae50df7ff087fbf326bdf2c53d9376b398"
     end
     on_intel do
       url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-macos-x86_64.zip"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "6e0e7bb5efc62e319ab70d466f980b9cae9fd6b71bae5c0d8e6ce7270b6d09bc"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-linux-amd64.zip"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "08a2ce99e35bdf5f6fc92d0c6b741ac17e7c34cddfe5b3ce06eee176f7e54e79"
     end
     on_arm do
       url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-linux-arm64.zip"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "b23383626238c7815a1d053e8ed519e6b1f6f2bbd72de91bba2530f73b53cda6"
     end
   end
 
