@@ -9,31 +9,23 @@ class LensScan < Formula
   # have installed. The archives are ad-hoc signed, so Gatekeeper is content.
   on_macos do
     on_arm do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.5.3/lens_scan-macos-arm64.zip"
-      sha256 "64dfab0c2c2258e769eb11b01cd12d5da5e20da245504a050e9bc1323554a267"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-macos-arm64.zip"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     end
-
     on_intel do
-      odie <<~MSG
-        No Intel build is published yet - only Apple Silicon.
-        Install it with uv instead:
-          uv tool install "chrome-lens-py[clipboard]"
-      MSG
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-macos-x86_64.zip"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.5.3/lens_scan-linux-amd64.zip"
-      sha256 "68a54ea7363d57478d29c83c55da8f01ea54f1aa35a1ed073f4a99783ebbffe3"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-linux-amd64.zip"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     end
-
     on_arm do
-      odie <<~MSG
-        No ARM Linux build is published yet.
-        Install it with uv instead:
-          uv tool install "chrome-lens-py[clipboard]"
-      MSG
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.6.0/lens_scan-linux-arm64.zip"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     end
   end
 
