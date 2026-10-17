@@ -9,23 +9,23 @@ class LensScan < Formula
   # have installed. The archives are ad-hoc signed, so Gatekeeper is content.
   on_macos do
     on_arm do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.7.1/lens_scan-macos-arm64.zip"
-      sha256 "c6106cf0614f67ebbdbf3fbb2d41013a27af172be8637babdefb8c0af0ed3025"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.8.0/lens_scan-macos-arm64.zip"
+      sha256 "718c5c9814f9b2b9b8a395305ea285a9435130b8b21b9fc3a3bb11cee15825b4"
     end
     on_intel do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.7.1/lens_scan-macos-x86_64.zip"
-      sha256 "3b0c596198e8e35679c8b06c6860135727b71f4ad51c143441fe63eef0f15653"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.8.0/lens_scan-macos-x86_64.zip"
+      sha256 "1a28500a4db7a4e15d700c0c5b8232f58a3bf42c23df42dad9bb12ff268572fa"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.7.1/lens_scan-linux-amd64.zip"
-      sha256 "4816354a6838499b9645b8155c6051616839b2230ea90fedcb322c7a443d9402"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.8.0/lens_scan-linux-amd64.zip"
+      sha256 "8623b5a1d0164a0fab1cbf4662b8591c958225b0009e0bce2dec2b7b2a4453f7"
     end
     on_arm do
-      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.7.1/lens_scan-linux-arm64.zip"
-      sha256 "a852cf4584f9d0fb5d996567dfa2d208de89d634f3b2262f655abb61cc7be391"
+      url "https://github.com/bropines/chrome-lens-py/releases/download/v3.8.0/lens_scan-linux-arm64.zip"
+      sha256 "b2e4f6ada3c841ea182707c9cdd1c8cb3ae6369207b34a5f5ffff08700d333b2"
     end
   end
 
