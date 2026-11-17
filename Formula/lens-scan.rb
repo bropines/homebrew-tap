@@ -51,6 +51,11 @@ class LensScan < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/lens_scan --version")
-    assert_match "image_source", shell_output("#{bin}/lens_scan --help")
+    # The machine-readable form, which outlives any rewording of the help.
+    assert_match "\"version\": \"#{version}\"", shell_output("#{bin}/lens_scan version --json")
+    # Routed before anything touches the network, so it works in a sandbox.
+    assert_match "Commands:", shell_output("#{bin}/lens_scan --help")
+    # A wrong command line is EX_USAGE (64), not a crash or a failed scan.
+    shell_output("#{bin}/lens_scan --no-such-flag 2>&1", 64)
   end
 end
